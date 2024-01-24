@@ -19,3 +19,8 @@ def lambda_handler(event,context):
             ':content':data['content']
         }
     )
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Note updated successfully!')
+    }
